@@ -13,12 +13,12 @@ String chexSchema = "validation"  //
 String chexSuffix = "_tiu_" + timeStamp.substring(0, 8) // Change the suffix for each run, otherwise the data WILL BE OVERWRITTEN!
 def chexTypes= [
         "gov.va.vinci.leo.pcl.types.Logic"  ] // when blank, SimanListener outputs all annotations
-boolean chexOverwrite = true
+boolean chexOverwrite = false
 String chexDocumentTextSelectQuery = ""
 String chexColumnPrefix = "["
 String chexColumnSuffix ="]"
 int batchSize = 1000
-String url = "jdbc:sqlserver://vhacdwrb02:1433;databasename=ORD_Bress_201607061D;integratedSecurity=true"
+String url = "jdbc:sqlserver://vhacdwrb02:1433;databasename=***ORD***;integratedSecurity=true"
 String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 
 

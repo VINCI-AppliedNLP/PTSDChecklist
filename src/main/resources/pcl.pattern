@@ -3,6 +3,9 @@
 <!target><gov.va.vinci.leo.pcl.types.Term/><!target/>\s*.?\s*<!anchor><gov.va.vinci.leo.pcl.types.PCL_score/><!anchor/>
 #PCL score:59
 <!target><gov.va.vinci.leo.pcl.types.Term/><!target/>\s*<gov.va.vinci.leo.pcl.types.Middle/>\s*.?\s*<!anchor><gov.va.vinci.leo.pcl.types.PCL_score/><!anchor/>
+#PCL-S, veteran scored a 56
+<!target><gov.va.vinci.leo.pcl.types.Term/><!target/>,\s*<gov.va.vinci.leo.pcl.types.Middle/>\s*.?\s*<!anchor><gov.va.vinci.leo.pcl.types.PCL_score/><!anchor/>
+<gov.va.vinci.leo.pcl.types.Middle/>\s*<!anchor><gov.va.vinci.leo.pcl.types.PCL_score/><!anchor/><gov.va.vinci.leo.pcl.types.Middle/>\s*<!target><gov.va.vinci.leo.pcl.types.Term/><!target/>
 #nyha class 1
 #nyha class:1
 

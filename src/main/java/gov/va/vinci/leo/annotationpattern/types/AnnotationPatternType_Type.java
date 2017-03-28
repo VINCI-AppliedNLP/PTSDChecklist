@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Mar 27 19:50:32 CDT 2017 */
+/* First created by JCasGen Tue Mar 28 13:30:46 CDT 2017 */
 package gov.va.vinci.leo.annotationpattern.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon Mar 27 19:50:32 CDT 2017
+ * Updated by JCasGen Tue Mar 28 13:30:46 CDT 2017
  * @generated */
 public class AnnotationPatternType_Type extends Annotation_Type {
   /** @generated 

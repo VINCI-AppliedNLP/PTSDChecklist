@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Mar 27 19:50:32 CDT 2017 */
+/* First created by JCasGen Tue Mar 28 13:30:46 CDT 2017 */
 package gov.va.vinci.leo.pcl.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import gov.va.vinci.leo.regex.types.RegularExpressionType;
 
 
 /** 
- * Updated by JCasGen Mon Mar 27 19:50:32 CDT 2017
- * XML source: C:/Users/VHASLC~3/AppData/Local/Temp/2/leoTypeDescription_bc57e289-13fa-4567-ac8c-88cfbcf0acdf3836996194762201411.xml
+ * Updated by JCasGen Tue Mar 28 13:30:46 CDT 2017
+ * XML source: C:/Users/VHASLC~3/AppData/Local/Temp/2/leoTypeDescription_d6dee57a-203d-4fee-9095-8697c19985868794700735508283085.xml
  * @generated */
 public class NYHA_Template_score extends RegularExpressionType {
   /** @generated

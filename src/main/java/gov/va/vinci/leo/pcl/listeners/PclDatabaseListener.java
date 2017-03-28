@@ -161,6 +161,7 @@ public class PclDatabaseListener extends BaseDatabaseListener {
 
 
                 String value = ((Logic) an).getPCL_Value();
+                String termvalue = ((Logic) an).getTerm_Value();
                 String snippet = aCas.getDocumentText().substring(start, end);
                 String snipStart = "" + an.getBegin();
                 String snipEnd = "" + an.getEnd();
@@ -179,7 +180,8 @@ public class PclDatabaseListener extends BaseDatabaseListener {
                 }
                 record.put("DocID", docId);
                 //record.put("PatientSID", patientId);
-                record.put("PclValue", value);
+                record.put("PCL_Score", value);
+                record.put("PCL_Type", termvalue);
                 record.put("Snippet", snippet);
                 record.put("SpanStart", snipStart);
                 record.put("SpanEnd", snipEnd);

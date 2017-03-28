@@ -71,9 +71,7 @@ public class PclLogicAnnotator extends LeoBaseAnnotator {
                     if (p.getAnchor() != null) {
                         if (p.getAnchor() instanceof PCL_score) {
                             PCL_score c = (PCL_score) p.getAnchor();
-                            if (c.getConcept() != null) {
-                                value = c.getConcept();
-                            }
+                                value = c.getCoveredText();
                         }
                     }
 

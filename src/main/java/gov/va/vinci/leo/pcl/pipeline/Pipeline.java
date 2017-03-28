@@ -25,6 +25,7 @@ import gov.va.vinci.leo.annotationpattern.ae.AnnotationPatternAnnotator;
 import gov.va.vinci.leo.context.ae.ContextAnnotator;
 import gov.va.vinci.leo.descriptors.LeoAEDescriptor;
 import gov.va.vinci.leo.descriptors.LeoTypeSystemDescription;
+import gov.va.vinci.leo.pcl.ae.PclLogicAnnotator;
 import gov.va.vinci.leo.regex.ae.RegexAnnotator;
 import gov.va.vinci.leo.sentence.ae.AnchoredSentenceAnnotator;
 import gov.va.vinci.leo.window.ae.WindowAnnotator;
@@ -174,11 +175,11 @@ public class Pipeline extends gov.va.vinci.leo.BasePipeline {
         .setTypesToKeep(new String[]{TYPE_CONTEXT})
         .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
 */
-/*
+
     pipeline.addDelegate(new PclLogicAnnotator().getLeoAEDescriptor()
             .setName("LogicAnnotator")
             .addTypeSystemDescription(getLeoTypeSystemDescription()));
-*/
+
   }
   
   

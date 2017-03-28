@@ -46,13 +46,13 @@ public class PclClient {
 	public static void main(String[] args) throws CmdLineException {
 		if (args.length < 3) {
 			new PclClient(new File("config/ClientConfig.groovy"),
-					new File("config/readers/FileCollectionReaderConfig.groovy"),
-					//new File("config/readers/DatabaseCollectionReaderExample.groovy"),
+					//new File("config/readers/FileCollectionReaderConfig.groovy"),
+					new File("config/readers/DatabaseCollectionReaderExample.groovy"),
 					//new File("config/readers/BatchDatabaseCollectionReaderExample.groovy"),
 					new File[]{
-							new File("config/listeners/SimpleXmiListenerconfig.groovy")
-					//		new File("config/listeners/DatabaseListenerConfig.groovy")
-					//		 new File("config/listeners/ChexListenerConfig.groovy")
+					//		new File("config/listeners/SimpleXmiListenerconfig.groovy")
+						//new File("config/listeners/DatabaseListenerConfig.groovy")
+							 new File("config/listeners/ChexListenerConfig.groovy")
 					}
 			).runClient();
 		} else {

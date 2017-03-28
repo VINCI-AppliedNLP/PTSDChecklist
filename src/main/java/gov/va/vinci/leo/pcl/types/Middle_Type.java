@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Mar 27 19:50:32 CDT 2017 */
+/* First created by JCasGen Tue Mar 28 13:30:46 CDT 2017 */
 package gov.va.vinci.leo.pcl.types;
 
 import org.apache.uima.jcas.JCas;
@@ -12,7 +12,7 @@ import org.apache.uima.cas.Type;
 import gov.va.vinci.leo.regex.types.RegularExpressionType_Type;
 
 /** 
- * Updated by JCasGen Mon Mar 27 19:50:32 CDT 2017
+ * Updated by JCasGen Tue Mar 28 13:30:46 CDT 2017
  * @generated */
 public class Middle_Type extends RegularExpressionType_Type {
   /** @generated 
