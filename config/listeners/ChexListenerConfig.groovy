@@ -1,8 +1,5 @@
 package listeners
 
-/**
- * Created by vhaslcalbap on 1/20/2017.
- */
 import gov.va.vinci.leo.pcl.listeners.ChexListener
 import gov.va.vinci.leo.tools.LeoUtils
 
@@ -10,7 +7,7 @@ String timeStamp = LeoUtils.getTimestampDateDotTime().replaceAll("[.]", "_")
 
 
 String chexSchema = "validation"  //
-String chexSuffix = "_tiu_" + timeStamp.substring(0, 8) // Change the suffix for each run, otherwise the data WILL BE OVERWRITTEN!
+String chexSuffix = "_xxx_" + timeStamp.substring(0, 8) // Change the suffix for each run, otherwise the data WILL BE OVERWRITTEN!
 def chexTypes= [
         "gov.va.vinci.leo.pcl.types.Logic"  ] // when blank, SimanListener outputs all annotations
 boolean chexOverwrite = false
