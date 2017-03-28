@@ -1,0 +1,21 @@
+Files to review/modify
+======================
+
+config/listeners/SimanDatabaseListenerConfig.groovy
+config/PreAnnotationPrep.groovy
+
+Instructions
+============
+
+ 1. Create database on MySQL
+ 2. Add source data (LoadFilesToDb.groovy)
+ 3. Create CR project
+ 4. Copy ProjectID (from URL) and paste it to SimanDatabaseListenerConfig.groovy (and modify other DB properties)
+ 5. Create Siman Tables through CR
+ 6. Create ClinicalElementConfiguration and copy the id to SimanDatabaseListernerConfig.groovy
+ 7. Create Annotation Schema (make sure the classification and attributes reflect annotation types and features)
+ 8. Save the annotation schema xml file and add it to SCHEMA_FILE_PATH in PreAnnotationPrep.groovy
+ 9. Modify the 'annotation_classification_map' and 'feature_attribute_map' in PreAnnotationPrep.groovy to reflect the mapping between uima annotations/features and CR schema classifications/attributes
+10. Run the NLP service using the SimanDatabaseListenerConfig.groovy as the listener
+11. Run PreAnnotationPrep.groovy. This will do an sql update to change the names of the annotations and features inside siman tables.
+12. Add a single step user task in CR project and you should see the pre-annotations when you get to each task.

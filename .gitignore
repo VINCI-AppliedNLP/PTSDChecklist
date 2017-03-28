@@ -1,0 +1,21 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.settings/
+ExampleLog.log
+data/output
+dist/ClientConfig.groovy
+dist/CommonConfig.groovy
+dist/ExampleLog.log
+dist/ServerConfig.groovy
+dist/context.pattern
+dist/data/
+dist/exclude.pattern
+dist/lib/
+dist/log4j.properties
+dist/run.bat
+dist/src/
+dist/term.regex
+elite.iml
+target/
+/dist/
+/config/desc/*.xml
