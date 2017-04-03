@@ -9,7 +9,7 @@ String dbPwd = ""
 
 String dbsName = "***ORD***"
 String timeStamp = LeoUtils.getTimestampDateDotTime().replaceAll("[.]", "_")
-String tableName = "[nlp].[PCL_" + timeStamp.substring(0, 8) + "Initial_Test]"
+String tableName = "[nlp].[PCL_" + timeStamp.substring(0, 8) + "Final_Output_Table_14]"
 
 fieldList = [
         ["DocID", "0", "bigint"],
@@ -20,11 +20,10 @@ fieldList = [
         ["SpanEnd", "-1", "int"],
         //["patientsid", "1", "varchar(50)"]
 ]
-
-boolean dropExisting = true;
+//40,000
+boolean dropExisting = false;
 listener = PclDatabaseListener.createNewListener(driver, url, dbUser, dbPwd, dbsName, tableName, batchSize, fieldList)
 //create table
 listener.createTable(listener.createStatement, dropExisting, tableName)
 println(listener.createStatement)
 println(listener.preparedStatementSQL)
-  

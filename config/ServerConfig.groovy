@@ -27,7 +27,7 @@ descriptorDirectory = "config/desc"
 isAsync = false
 instanceNumber = 10
 createTypes = true
-casPoolSize = 100
+casPoolSize = 300
 
 jamURL = "http://vhacdwweb04:8090/jam/";
 registerWithJam = true;

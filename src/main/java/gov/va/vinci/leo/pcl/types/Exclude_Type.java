@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Mar 28 13:30:46 CDT 2017 */
+/* First created by JCasGen Fri Mar 31 17:13:38 CDT 2017 */
 package gov.va.vinci.leo.pcl.types;
 
 import org.apache.uima.jcas.JCas;
@@ -12,7 +12,7 @@ import org.apache.uima.cas.Type;
 import gov.va.vinci.leo.regex.types.RegularExpressionType_Type;
 
 /** 
- * Updated by JCasGen Tue Mar 28 13:30:46 CDT 2017
+ * Updated by JCasGen Fri Mar 31 17:13:38 CDT 2017
  * @generated */
 public class Exclude_Type extends RegularExpressionType_Type {
   /** @generated 

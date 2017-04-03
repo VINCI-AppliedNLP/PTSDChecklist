@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Mar 28 13:30:46 CDT 2017 */
+/* First created by JCasGen Fri Mar 31 17:13:38 CDT 2017 */
 package gov.va.vinci.leo.annotationpattern.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Mar 28 13:30:46 CDT 2017
- * XML source: C:/Users/VHASLC~3/AppData/Local/Temp/2/leoTypeDescription_d6dee57a-203d-4fee-9095-8697c19985868794700735508283085.xml
+ * Updated by JCasGen Fri Mar 31 17:13:38 CDT 2017
+ * XML source: C:/Users/VHASLC~4/AppData/Local/Temp/2/leoTypeDescription_03c2e3b4-fa52-44ae-be27-19217264b6eb9055840640407033550.xml
  * @generated */
 public class AnnotationPatternType extends Annotation {
   /** @generated
