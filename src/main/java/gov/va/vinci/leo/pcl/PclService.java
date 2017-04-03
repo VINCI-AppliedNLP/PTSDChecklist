@@ -1,11 +1,12 @@
 package gov.va.vinci.leo.pcl;
 
-import gov.va.vinci.leo.BasePipeline;
+import gov.va.vinci.leo.pcl.pipeline.BasePipeline;
 import gov.va.vinci.leo.descriptors.LeoAEDescriptor;
 import gov.va.vinci.leo.descriptors.LeoTypeSystemDescription;
 import gov.va.vinci.leo.tools.LeoUtils;
 import groovy.util.ConfigObject;
 import groovy.util.ConfigSlurper;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.log4j.Logger;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
@@ -13,7 +14,9 @@ import org.kohsuke.args4j.Option;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
- 
+import java.util.Map;
+import java.util.Set;
+
 
 /**
  *
@@ -170,6 +173,12 @@ public class PclService {
     
     ConfigSlurper configSlurper = new ConfigSlurper();
     ConfigObject o = configSlurper.parse(serviceConfigFile[0].toURI().toURL());
+    Set<Map.Entry> entries = o.entrySet();
+    for (Map.Entry e : entries) {
+      System.out.println("Setting property " + e.getKey() + " on service to " + e.getValue() + ".");
+      BeanUtils.setProperty(leoServer, e.getKey().toString(), e.getValue());
+    }
+    /**/
     if (o.keySet().contains("brokerURL"))
       leoServer.setBrokerURL(o.get("brokerURL").toString());
     
@@ -196,7 +205,7 @@ public class PclService {
     
     if (o.keySet().contains("jamServerBaseUrl"))
       leoServer.setJamServerBaseUrl( o.get("jamServerBaseUrl").toString());
-    
+    /**/
     if (o.keySet().contains("instanceNumber"))
       numberOfInstances = Integer.parseInt(o.get("instanceNumber").toString());
     

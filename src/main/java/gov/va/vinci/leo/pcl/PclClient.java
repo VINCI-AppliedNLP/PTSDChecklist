@@ -5,6 +5,7 @@ import gov.va.vinci.leo.aucompare.listener.AuSummaryListener;
 import gov.va.vinci.leo.cr.BaseLeoCollectionReader;
 import groovy.util.ConfigObject;
 import groovy.util.ConfigSlurper;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.time.StopWatch;
 import org.apache.uima.aae.client.UimaAsBaseCallbackListener;
 import org.kohsuke.args4j.CmdLineException;
@@ -16,6 +17,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -131,7 +134,11 @@ public class PclClient {
 		
 		ConfigSlurper configSlurper = new ConfigSlurper();
 		ConfigObject o = configSlurper.parse(clientConfigFile[0].toURI().toURL());
-		
+		 Set<Map.Entry> entries = o.entrySet();
+    for (Map.Entry e : entries) {
+      System.out.println("Setting property " + e.getKey() + " on service to " + e.getValue() + ".");
+      BeanUtils.setProperty(leoClient, e.getKey().toString(), e.getValue());
+    }
 		if (o.keySet().contains("brokerURL"))
 			leoClient.setBrokerURL((String) o.get("brokerURL").toString());
 		

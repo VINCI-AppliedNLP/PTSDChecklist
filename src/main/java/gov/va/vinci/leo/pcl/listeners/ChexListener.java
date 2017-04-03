@@ -44,7 +44,7 @@ public class ChexListener extends ChexSimanDatabaseListener {
 
     public ChexListener(ChexSimanDataSourceConfiguration simanDataSourceConfiguration) throws SQLException {
         super(simanDataSourceConfiguration);
-        LOG.info(" Initializing " + this.getClass().getCanonicalName() + "\r\n"
+        log.info(" Initializing " + this.getClass().getCanonicalName() + "\r\n"
                 + simanDataSourceConfiguration.getDocumentSelectAllSql());
         try {
             validateSchemaAndCreateIfNeeded(false);

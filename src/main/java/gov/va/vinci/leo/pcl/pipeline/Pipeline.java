@@ -33,7 +33,7 @@ import org.apache.uima.resource.metadata.TypeDescription;
 import org.apache.uima.resource.metadata.impl.TypeDescription_impl;
 
 
-public class Pipeline extends gov.va.vinci.leo.BasePipeline {
+public class Pipeline extends BasePipeline {
   private String TYPE_REGEX = "gov.va.vinci.leo.regex.types.RegularExpressionType";
   private String TYPE_PATTERN = "gov.va.vinci.leo.annotationpattern.types.AnnotationPatternType";
   private String SENTENCE_TYPE = "gov.va.vinci.leo.sentence.types.AnchoredSentence";
