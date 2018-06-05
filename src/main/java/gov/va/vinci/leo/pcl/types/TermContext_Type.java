@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
-/* First created by JCasGen Fri Mar 31 17:13:38 CDT 2017 */
-=======
-/* First created by JCasGen Tue Mar 28 15:35:13 CDT 2017 */
->>>>>>> 824d78e811eb738ee13aafa62eb8d4d21fab9847
+/* First created by JCasGen Mon Jun 04 11:38:01 CDT 2018 */
 package gov.va.vinci.leo.pcl.types;
 
 import org.apache.uima.jcas.JCas;
@@ -18,11 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
-<<<<<<< HEAD
- * Updated by JCasGen Fri Mar 31 17:13:38 CDT 2017
-=======
- * Updated by JCasGen Tue Mar 28 15:35:13 CDT 2017
->>>>>>> 824d78e811eb738ee13aafa62eb8d4d21fab9847
+ * Updated by JCasGen Mon Jun 04 11:38:01 CDT 2018
  * @generated */
 public class TermContext_Type extends Annotation_Type {
   /** @generated 

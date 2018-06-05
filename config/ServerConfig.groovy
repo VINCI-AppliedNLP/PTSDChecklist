@@ -9,7 +9,7 @@
 
 //URL for local UIMA broker
 //brokerURL = "tcp://localhost:61616"
-brokerURL						="tcp://vhacdwrb04:61616"
+brokerURL						="tcp://vhacdwdavdev01:61616";
 
 /**
  * The endpoint name of the UIMA AS service to use for processing. The service will be
@@ -26,8 +26,8 @@ descriptorDirectory = "config/desc"
 // Sync vs Async scaleout. isAsync=false means that the service will run as synchronous
 isAsync = false
 instanceNumber = 10
-createTypes = true
-casPoolSize = 300
+createTypes = false
+casPoolSize = 10
 
 jamURL = "http://vhacdwweb04:8090/jam/";
 registerWithJam = true;
