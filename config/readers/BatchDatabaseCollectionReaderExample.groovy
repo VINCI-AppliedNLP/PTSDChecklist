@@ -11,7 +11,7 @@ reader = new BatchDatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServ
                 " on a.tiudocumentsid=b.tiudocumentsid" +
                 " where rowNo >{min} and rowNo<{max}   ",
         "tiudocumentsid", "reporttext",
-        43000000,  45000000,
+        59000000,  61000000,
         30000);
 
 
