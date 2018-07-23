@@ -11,12 +11,13 @@ reader = new BatchDatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServ
                 " on a.tiudocumentsid=b.tiudocumentsid" +
                 " where rowNo >{min} and rowNo<{max}   ",
         "tiudocumentsid", "reporttext",
-        59000000,  61000000,
+        76300000,  77533000,
         30000);
 
 
 /*
 Shiner Run -
+//77,329,693 Total
 [PCL_20180508_Output_1] 0, 1000000/
     Errored out @where rowNo >389999 and rowNo<420000
     [PCL_20180508_Output_1-5] 389999, 1000000 - Client finished in: 10:04:00.586.
@@ -61,6 +62,24 @@ Shiner Run -
 [PCL_20180529_Output_31] 39000000, 41000000 - Client finished in: 10:24:36.846.
 [PCL_20180529_Output_32] 41000000, 43000000 - Client finished in: 10:22:08.627.
 [PCL_20180529_Output_33] 43000000, 45000000 - Client finished in: 10:12:32.354.
+[PCL_20180529_Output_42] 59000000, 61000000 Error @ rowNo >60289999 and rowNo<60320000
+                [PCL_20180529_Output_42-2]  - Client finished in: 08:58:37.360.
+[PCL_20180529_Output_43] 61000000, 63000000 Error @ rowNo >62199999 and rowNo<62230000
+                [PCL_20180529_Output_43-2]  - Client finished in: 10:12:03.038.
+[PCL_20180529_Output_44] 63000000, 65000000 Error @ rowNo >64319999 and rowNo<64350000
+                [PCL_20180529_Output_44-2] - Client finished in: 10:45:40.444.
+[PCL_20180529_Output_45] 65000000, 67000000 Error @ rowNo >66289999 and rowNo<66320000
+                [PCL_20180529_Output_45-2]  - Client finished in: 07:28:15.327.
+[PCL_20180614_Output_46] 67000000, 69000000 - 1808285
+    [PCL_20180614_Output_46-2] 67800000, 69000000 - 1808285
+[PCL_20180614_Output_47] 69000000, 71000000 - 1972724
+    [PCL_20180614_Output_47] 70800000, 71000000 - 1972724 - Client finished in: 01:39:16.644.
+[PCL_20180614_Output_48] 71000000, 73000000 rowNo<72500000 - Client finished in: 06:49:40.402.
+    [PCL_20180614_Output_48] 72500000, 73000000 rowNo<72500000 - Client finished in: 00:10:03.896.
+[PCL_20180614_Output_49] 73000000, 75500000 - 1909241 - Client finished in: 08:45:34.342.
+[PCL_20180614_Output_50] 75500000, 77533000 - 1829370
+
+//77,329,693 Total
 
 
 

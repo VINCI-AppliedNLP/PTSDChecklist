@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Jun 04 11:38:01 CDT 2018 */
+/* First created by JCasGen Mon Jun 18 10:10:52 CDT 2018 */
 package gov.va.vinci.leo.pcl.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import gov.va.vinci.leo.window.types.Window;
 
 
 /** 
- * Updated by JCasGen Mon Jun 04 11:38:01 CDT 2018
- * XML source: C:/Users/VHASLC~2/AppData/Local/Temp/3/leoTypeDescription_6b2ccf66-1b96-4422-8ab1-15e8368ac7da6277963775793278196.xml
+ * Updated by JCasGen Mon Jun 18 10:10:52 CDT 2018
+ * XML source: C:/Users/VHASLC~2/AppData/Local/Temp/6/leoTypeDescription_a8758c83-aa84-4b66-ab54-c6f6272a26807732608476961252042.xml
  * @generated */
 public class TermWindow extends Window {
   /** @generated

@@ -9,7 +9,7 @@ String dbPwd = ""
 
 String dbsName = "***ORD***"
 String timeStamp = LeoUtils.getTimestampDateDotTime().replaceAll("[.]", "_")
-String tableName = "[nlp].[PCL_" + timeStamp.substring(0, 8) + "_Output_33]"
+String tableName = "[nlp].[PCL_" + timeStamp.substring(0, 8) + "_Output_50-2]"
 
 fieldList = [
         ["DocID", "0", "bigint"],

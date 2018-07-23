@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Jun 04 11:38:01 CDT 2018 */
+/* First created by JCasGen Mon Jun 18 10:10:52 CDT 2018 */
 package gov.va.vinci.leo.sentence.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** Sentence Type
- * Updated by JCasGen Mon Jun 04 11:38:01 CDT 2018
+ * Updated by JCasGen Mon Jun 18 10:10:52 CDT 2018
  * @generated */
 public class AnchoredSentence_Type extends Annotation_Type {
   /** @generated 

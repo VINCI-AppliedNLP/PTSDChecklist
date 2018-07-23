@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Jun 04 11:38:00 CDT 2018 */
+/* First created by JCasGen Mon Jun 18 10:10:52 CDT 2018 */
 package gov.va.vinci.leo.pcl.types;
 
 import org.apache.uima.jcas.JCas;
@@ -12,7 +12,7 @@ import org.apache.uima.cas.Type;
 import gov.va.vinci.leo.regex.types.RegularExpressionType_Type;
 
 /** 
- * Updated by JCasGen Mon Jun 04 11:38:00 CDT 2018
+ * Updated by JCasGen Mon Jun 18 10:10:52 CDT 2018
  * @generated */
 public class NYHA_Template_score_Type extends RegularExpressionType_Type {
   /** @generated 
