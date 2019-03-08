@@ -36,17 +36,17 @@
         <dependency>
             <groupId>gov.va.vinci.leo</groupId>
             <artifactId>leo-client</artifactId>
-            <version>2016.10.0</version>
+            <version>2018.01.0</version>
         </dependency>
         <dependency>
             <groupId>gov.va.vinci.leo</groupId>
             <artifactId>leo-service</artifactId>
-            <version>2016.10.0</version>
+            <version>2018.01.0</version>
         </dependency>
         <dependency>
             <groupId>gov.va.vinci.leo</groupId>
             <artifactId>leo-core</artifactId>
-            <version>2016.10.0</version>
+            <version>2018.01.0</version>
         </dependency>
          <!-- Core Leo dependency end-->
 
@@ -54,22 +54,17 @@
          <dependency>
             <groupId>gov.va.vinci</groupId>
             <artifactId>leo-chex-siman</artifactId>
-            <version>2016.07.0</version>
+            <version>2018.02.1</version>
         </dependency>
         <dependency>
             <groupId>gov.va.vinci</groupId>
             <artifactId>leo-annotation-pattern</artifactId>
-            <version>2016.11.0</version>
-        </dependency>
-      <dependency>
-            <groupId>gov.va.vinci</groupId>
-            <artifactId>leo-annotation-pattern</artifactId>
-            <version>2016.11.0</version>
+            <version>2018.02.0</version>
         </dependency>
          <dependency>
             <groupId>gov.va.vinci</groupId>
             <artifactId>leo-annotation-filter</artifactId>
-            <version>2016.05.3</version>
+            <version>2018.02.0</version>
         </dependency>
         <dependency>
             <groupId>gov.va.vinci</groupId>

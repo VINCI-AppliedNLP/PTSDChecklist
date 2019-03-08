@@ -79,65 +79,6 @@ public class Pipeline extends BasePipeline {
             .setName("TermAnnotator")
             //.setOutputType(TYPE_TERM)
             .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-/*
-    pipeline.addDelegate(new RegexAnnotator()
-              .setResource(RESOURCE_PATH + RESOURCE_MIDDLE)
-              .setCaseSensitive(false)
-              .setConceptFeatureName("concept")
-              .setGroupFeatureName("group")
-              .setMatchedPatternFeatureName("pattern")
-              .setName("MiddleAnnotator")
-              .setOutputType(TYPE_MIDDLE)
-              .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-    pipeline.addDelegate(new RegexAnnotator()
-              .setResource(RESOURCE_PATH + RESOURCE_VALUE)
-              .setCaseSensitive(false)
-              .setConceptFeatureName("concept")
-              .setGroupFeatureName("group")
-              .setMatchedPatternFeatureName("pattern")
-              .setName("ValueAnnotator")
-              .setOutputType(TYPE_VALUE)
-              .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
- *
-    pipeline.addDelegate(new FilterAnnotator()
-            .setTypesToKeep(new String[]{TYPE_TERM, TYPE_VALUE, TYPE_MIDDLE})
-            .setRemoveOverlapping(true)
-            .setName("OverlapFilter")
-            .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-    pipeline.addDelegate(new FilterAnnotator()
-              .setTypesToDelete(new String[]{TYPE_TERM, TYPE_VALUE, TYPE_MIDDLE, TYPE_CHF_TERM})
-              .setTypesToKeep(new String[]{TYPE_EXCLUDE})
-              .setRemoveOverlapping(true)
-              .setName("ExcludeFilter")
-              .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-
-
-    log.info("Resource files will be used  : \r\n"
-        + (new File(RESOURCE_PATH + RESOURCE_TERM)).getAbsolutePath()
-        + "\r\n" + (new File(RESOURCE_PATH + RESOURCE_CONTEXT)).getAbsolutePath());
-
-      pipeline.addDelegate(new WindowAnnotator()
-              .setAnchorFeature(TYPE_WINDOW_FEATURE)
-              .setRtWindowSize(35)
-              .setInputTypes(TYPE_TERM)
-              .setOutputType(TYPE_WINDOW)
-              .setName("WindowAnnotator")
-              .getDescriptor());
-      pipeline.addDelegate(new RegexAnnotator()
-              //.setGroovyConfigFile(RESOURCE_PATH + RESOURCE_TEMPLATE)
-              .setResource(RESOURCE_PATH + RESOURCE_TEMPLATE)
-              .setCaseSensitive(false)
-              .setConceptFeatureName("concept")
-              .setGroupFeatureName("group")
-              .setName("Temp_Value")
-              .setInputTypes(TYPE_WINDOW)
-              .setOutputType(TYPE_TEMP_VALUE)
-              .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-
-
-
-
-
 
 /*  Pattern detection AnnotationPatternAnnotation -- pcl.pattern   */
     pipeline.addDelegate(new AnnotationPatternAnnotator(  )
@@ -145,36 +86,6 @@ public class Pipeline extends BasePipeline {
         .setOutputType(TERM_PATTERN)
         .setName("ContextPatternAnnotator")
         .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-/*
-    pipeline.addDelegate(new FilterAnnotator()
-              .setTypesToKeep(new String[]{TERM_PATTERN})
-              .setRemoveOverlapping(true)
-              .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-		    /* SentenceAnnotation  */
-  /*
-    pipeline.addDelegate(new AnchoredSentenceAnnotator()
-        .setSpanSize(200)
-        .setAnchorFeature(TYPE_WINDOW_FEATURE)
-        .setInputTypes(TYPE_TERM)
-        .setOutputType(SENTENCE_TYPE)
-        .setName("TermSentencenAnnotator")
-        .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-    pipeline.addDelegate(new FilterAnnotator()
-        .setTypesToKeep(new String[]{SENTENCE_TYPE})
-        .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-*/
-		    /* ContextAnnotator based on Chapman's ConText with VINCI improvements */
-/*
-    pipeline.addDelegate(new ContextAnnotator()
-        .setConceptFeatureName(TYPE_WINDOW_FEATURE)
-        .setResourceFile(RESOURCE_PATH + RESOURCE_CONTEXT)
-        .setInputTypes(new String[]{SENTENCE_TYPE})
-        .setOutputType(TYPE_CONTEXT)
-        .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-    pipeline.addDelegate(new FilterAnnotator()
-        .setTypesToKeep(new String[]{TYPE_CONTEXT})
-        .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
-*/
 
     pipeline.addDelegate(new PclLogicAnnotator().getLeoAEDescriptor()
             .setName("LogicAnnotator")

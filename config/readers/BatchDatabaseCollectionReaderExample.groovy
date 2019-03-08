@@ -2,20 +2,22 @@ package readers
 
 import gov.va.vinci.leo.cr.BatchDatabaseCollectionReader;
 
-reader = new BatchDatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServerDriver", "jdbc:sqlserver://vhacdwrb03:1433;databasename=***ORD***;integratedSecurity=true",
+reader = new BatchDatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServerDriver", "jdbc:sqlserver://vhacdwrb02:1433;databasename=***ORD***;integratedSecurity=true",
         "", "",
         "SELECT a.Tiudocumentsid" +
         ",b.reporttext " +
-        "FROM  [***ORD***].[nlp].[TIUDocuments_Classified_EBP_20180425] a " +
-                " join   [***ORD***].[Src].[TIU_TIUDocument_8925] b " +
+        "FROM  [***ORD***].[nlp].[tiusid_4Olga_01042019_withrows] a " +
+                " join CDW_TIU.TIU.TIUDocument_8925_02 b with(nolock) " +
                 " on a.tiudocumentsid=b.tiudocumentsid" +
                 " where rowNo >{min} and rowNo<{max}   ",
         "tiudocumentsid", "reporttext",
         76300000,  77533000,
         30000);
 
-
 /*
+Cohen run -
+[nlp].[PCL_output_1mil]
+
 Shiner Run -
 //77,329,693 Total
 [PCL_20180508_Output_1] 0, 1000000/

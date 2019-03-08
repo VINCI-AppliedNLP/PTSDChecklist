@@ -2,14 +2,14 @@ import gov.va.vinci.leo.pcl.listeners.PclDatabaseListener
 import gov.va.vinci.leo.tools.LeoUtils
 
 int batchSize = 1000
-String url = "jdbc:sqlserver://vhacdwrb03:1433;databasename=***ORD***;integratedSecurity=true"
+String url = "jdbc:sqlserver://vhacdwrb02:1433;databasename=***ORD***;integratedSecurity=true"
 String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 String dbUser = ""
 String dbPwd = ""
 
 String dbsName = "***ORD***"
 String timeStamp = LeoUtils.getTimestampDateDotTime().replaceAll("[.]", "_")
-String tableName = "[nlp].[PCL_" + timeStamp.substring(0, 8) + "_Output_50-2]"
+String tableName = "[nlp].[PCL_output_10mil]"
 
 fieldList = [
         ["DocID", "0", "bigint"],
