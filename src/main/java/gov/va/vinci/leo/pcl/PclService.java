@@ -59,7 +59,6 @@ public class PclService {
       current_service.pipeline = new String[]{"gov.va.vinci.leo.pcl.pipeline.Pipeline"};
       
     } else {
-      
       CmdLineParser parser = new CmdLineParser(current_service);
       try {
         parser.parseArgument(args);

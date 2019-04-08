@@ -39,6 +39,7 @@ public class PclDatabaseListener extends BaseDatabaseListener {
         super(databaseConnectionInformation, preparedStatementSQL);
         this.createStatement = createStatement;
         this.setHeaders(fieldList);
+        this.batchSize = batchSize;
     }
 
     /**

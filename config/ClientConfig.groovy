@@ -9,4 +9,4 @@
 //brokerURL  ="tcp://localhost:61616";
 brokerURL = "tcp://vhacdwdavdev01:61616";
 casPoolSize   = 300
-endpoint = "PCL"
+endpoint = "PCL2"

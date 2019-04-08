@@ -17,19 +17,19 @@ brokerURL						="tcp://vhacdwdavdev01:61616";
  * to connect to this service.
  */
 
-endpoint = "PCL"
+endpoint = "PCL2"
 
 /** Tell the service to persist the descriptors that are generated, deletes them by default **/
-deleteOnExit = false
+deleteOnExit = true
 descriptorDirectory = "config/desc"
 
 // Sync vs Async scaleout. isAsync=false means that the service will run as synchronous
 isAsync = false
-instanceNumber = 10
+instanceNumber = 1
 createTypes = false
-casPoolSize = 10
+casPoolSize = 5
 
-jamURL = "http://vhacdwweb04:8090/jam/";
-registerWithJam = true;
-jamInterval = 3600;
-jamResetAfterQuery = false;
+//jamURL = "http://vhacdwweb04:8090/jam/";
+//registerWithJam = true;
+//jamInterval = 3600;
+//jamResetAfterQuery = false;

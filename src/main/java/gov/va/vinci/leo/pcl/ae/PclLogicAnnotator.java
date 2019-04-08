@@ -83,7 +83,7 @@ public class PclLogicAnnotator extends LeoBaseAnnotator {
             e.printStackTrace();
             throw new AnalysisEngineProcessException(e);
         }
-
+        //System.out.println("Document finished");
     }
 
     @Override

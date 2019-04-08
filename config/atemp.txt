@@ -46,7 +46,7 @@ def readerOptions = [
 		vinci :[
 			dbServer : projectServer,
 			dbName   : projectDbsName,
-			query: "SELECT TIUDocumentSID, reporttext, RowNo   FROM  [***ORD***].[Src].[TIUDocumentSID] where RowNo > {min} and RowNo <= {max};"
+			query: "SELECT TIUDocumentSID, reporttext, RowNo   FROM  [ORD_DuVall_201203011D].[Src].[TIUDocumentSID] where RowNo > {min} and RowNo <= {max};"
 			,
 			batchSize:10000,
 			startId:  1,
@@ -142,7 +142,7 @@ def listenerOptions=[
  */
 String sqlDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 
-// jdbc:sqlserver://VHACDWrb01:1433;databasename=***ORD***;integratedSecurity=true
+// jdbc:sqlserver://VHACDWrb01:1433;databasename=ORD_Saini_201206016D;integratedSecurity=true
 def sqlUrl = {server, dbsName ->
 	"jdbc:sqlserver://" + server+":1433;databasename="+dbsName+";integratedSecurity=true"
 }

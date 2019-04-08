@@ -2,21 +2,26 @@ package readers
 
 import gov.va.vinci.leo.cr.BatchDatabaseCollectionReader;
 
-reader = new BatchDatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServerDriver", "jdbc:sqlserver://vhacdwrb02:1433;databasename=***ORD***;integratedSecurity=true",
+reader = new BatchDatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServerDriver", "jdbc:sqlserver://vhacdwrb02:1433;databasename=ORD_Cohen_201607127D;integratedSecurity=true",
         "", "",
         "SELECT a.Tiudocumentsid" +
         ",b.reporttext " +
-        "FROM  [***ORD***].[nlp].[tiusid_4Olga_01042019_withrows] a " +
+        "FROM  [ORD_Cohen_201607127D].[nlp].[tiusid_4Olga_01042019_withrows] a " +
                 " join CDW_TIU.TIU.TIUDocument_8925_02 b with(nolock) " +
                 " on a.tiudocumentsid=b.tiudocumentsid" +
-                " where rowNo >{min} and rowNo<{max}   ",
+                " where RowID >{min} and RowID<{max}   ",
         "tiudocumentsid", "reporttext",
-        76300000,  77533000,
+        120000000,  130000000,
         30000);
 
 /*
 Cohen run -
-[nlp].[PCL_output_1mil]
+[nlp].[PCL_output_10_20mil ] Client finished in: 44:45:03.981.
+20-30 Client finished in: 37:06:44.571.
+30-40 Client finished in: 44:02:14.441.
+40-50 stuck after 42309999 ??
+
+50-60
 
 Shiner Run -
 //77,329,693 Total

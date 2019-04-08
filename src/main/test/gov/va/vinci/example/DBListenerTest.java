@@ -19,11 +19,11 @@ public class DBListenerTest {
 		fieldList.add(new String[] { "Negation", "varchar(20)" });
 		fieldList.add(new String[] { "Temporality", "varchar(20)" });
 		fieldList.add(new String[] { "Snippet", "varchar(2000)" });
-		String statement = EliteDbsListener.createCreateStatement("[***ORD***]", "[nlp].[nlptest]",
+		String statement = EliteDbsListener.createCreateStatement("[ORD_Justice_201010012D]", "[nlp].[nlptest]",
 		    fieldList);
 		Assert
 		    .assertEquals(
-		        "CREATE TABLE [***ORD***].[nlp].[nlptest] ( TIUDocumentSID bigint, Term varchar(200), Experiencer varchar(20), Negation varchar(20), Temporality varchar(20), Snippet varchar(2000) ) ;",
+		        "CREATE TABLE [ORD_Justice_201010012D].[nlp].[nlptest] ( TIUDocumentSID bigint, Term varchar(200), Experiencer varchar(20), Negation varchar(20), Temporality varchar(20), Snippet varchar(2000) ) ;",
 		        statement);
 
 	}
@@ -37,11 +37,11 @@ public class DBListenerTest {
 		fieldList.add(new String[] { "Negation", "varchar(20)" });
 		fieldList.add(new String[] { "Temporality", "varchar(20)" });
 		fieldList.add(new String[] { "Snippet", "varchar(2000)" });
-		String statement = EliteDbsListener.createInsertStatement("[***ORD***]", "[nlp].[nlptest]",
+		String statement = EliteDbsListener.createInsertStatement("[ORD_Justice_201010012D]", "[nlp].[nlptest]",
 		    fieldList);
 		Assert
 		    .assertEquals(
-		        "INSERT INTO [***ORD***].[nlp].[nlptest] ( TIUDocumentSID, Term, Experiencer, Negation, Temporality, Snippet ) VALUES (  ?, ?, ?, ?, ?, ? ) ;",
+		        "INSERT INTO [ORD_Justice_201010012D].[nlp].[nlptest] ( TIUDocumentSID, Term, Experiencer, Negation, Temporality, Snippet ) VALUES (  ?, ?, ?, ?, ?, ? ) ;",
 		        statement);
 	}
 

@@ -71,13 +71,11 @@ public class Pipeline extends BasePipeline {
      * */
     pipeline.addDelegate(new RegexAnnotator()
             .setGroovyConfigFile(RESOURCE_PATH + RESOURCE_TERM)
-                    // .setResource(RESOURCE_PATH + RESOURCE_TERM)
             .setCaseSensitive(false)
             .setConceptFeatureName("concept")
             .setGroupFeatureName("group")
             .setMatchedPatternFeatureName("pattern")
             .setName("TermAnnotator")
-            //.setOutputType(TYPE_TERM)
             .getLeoAEDescriptor().setTypeSystemDescription(getLeoTypeSystemDescription()));
 
 /*  Pattern detection AnnotationPatternAnnotation -- pcl.pattern   */
