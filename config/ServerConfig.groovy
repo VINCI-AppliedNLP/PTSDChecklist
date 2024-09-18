@@ -8,8 +8,7 @@
  */
 
 //URL for local UIMA broker
-//brokerURL = "tcp://localhost:61616"
-brokerURL						="tcp://vhacdwdavdev01:61616";
+brokerURL = "tcp://localhost:61616";
 
 /**
  * The endpoint name of the UIMA AS service to use for processing. The service will be
@@ -29,7 +28,3 @@ instanceNumber = 1
 createTypes = false
 casPoolSize = 5
 
-//jamURL = "http://vhacdwweb04:8090/jam/";
-//registerWithJam = true;
-//jamInterval = 3600;
-//jamResetAfterQuery = false;
