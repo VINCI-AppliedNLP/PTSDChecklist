@@ -36,3 +36,6 @@ We found PCL values in approximately 65% of these documents.
 * REMARK: BFG removed ORD in the history
 An IE system for the PTSD Checklist Score(PCL)
 
+### Analysis
+
+[PTSDEBP-RTH](/reports/PTSDEBP-RTH.md) This project set out to determine whether natural language processing (NLP) extraction of PCL scores from TIU clinical notes could meaningfully supplement the structured CDW data in a subset of patients receiving EBP between January 2017 and September 2024.
