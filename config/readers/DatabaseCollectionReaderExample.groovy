@@ -8,7 +8,7 @@ reader = new DatabaseCollectionReader("com.microsoft.sqlserver.jdbc.SQLServerDri
         "SELECT  tiudocumentsid" +
                 "      ,reporttext" +
                 " , '' as patientsid" +
-               " FROM  [ORD_Maguen_201412067D].[NLP].[PCL_Test_DOCS]  ",
+               " FROM NOTES_TABLE  ",
 
 "tiudocumentsid",
 "reporttext");
