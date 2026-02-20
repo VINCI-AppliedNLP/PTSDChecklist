@@ -15,7 +15,7 @@ String chexDocumentTextSelectQuery = ""
 String chexColumnPrefix = "["
 String chexColumnSuffix ="]"
 int batchSize = 1000
-String url = "jdbc:sqlserver://vhacdwrb02:1433;databasename=ORD_Maguen_201412067D;integratedSecurity=true"
+String url = "jdbc:sqlserver://SERVER_NAME:1433;databasename=STUDY_DATABASE;integratedSecurity=true"
 String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 
 
